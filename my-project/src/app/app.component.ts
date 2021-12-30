@@ -12,6 +12,11 @@ export class AppComponent {
   age = 18;
   img = 'https://source.unsplash.com/random';
   btnDisabled = true;
+  register = {
+    name: '',
+    email: '',
+    password: ''
+  }
   person = {
     name: 'Daniel',
     age: 17,
@@ -85,4 +90,9 @@ export class AppComponent {
   deleteName(index: number) {
     this.names.splice(index, 1);
   }
+
+  onRegister() {
+    console.log(this.register)
+  }
+
 }
